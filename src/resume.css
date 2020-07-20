@@ -1,0 +1,190 @@
+@include-when-export url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
+@include-when-export url(https://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext);
+
+@charset "UTF-8";
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: normal;
+	font-weight: normal;
+	src: url(./resume/texgyreadventor-regular.otf);
+}
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: normal;
+	font-weight: bold;
+	src: url(./resume/texgyreadventor-bold.otf);
+}
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: italic;
+	font-weight: normal;
+	src: url(./resume/texgyreadventor-italic.otf);
+}
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: italic;
+	font-weight: bold;
+	src: url(./resume/texgyreadventor-bolditalic.otf);
+}
+
+:root {
+	--window-border: none;
+	--typora-center-window-title: true;
+	--active-file-bg-color: #f3f3f3;
+	--bg-color: #fcfcfc;
+	--control-text-color: #777;
+}
+
+.mac-seamless-mode #typora-sidebar {
+	top: var(--mac-title-bar-height);
+	padding-top: 0;
+	height: auto;
+}
+
+html,
+body,
+#write{
+	background: #ffffff;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
+	font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #111;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
+}
+
+html {
+	font-size: 14px;
+}
+
+#write {
+	max-width: 1048px;
+	text-align: justify;
+}
+
+h1 {
+	font-weight: normal;
+    font-size: 1.5rem;
+	text-transform: uppercase;
+    margin-top: 1rem;
+}
+h2 {
+	font-weight: normal;
+    font-size: 1.25rem;
+	text-transform: uppercase;
+
+}
+h3 {
+    font-weight: normal;
+    font-size: 1.125rem;
+    padding-left: 12pt;
+    margin-top: 0.75rem;
+}
+h4 {
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 12pt;
+    margin-top: 0.75rem;
+}
+h5 {
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 24pt;
+}
+h6 {
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 24pt;
+}
+p {
+	color: #111;
+	font-size: 1rem;
+    padding: 0 0 0 0;
+}
+
+ul,
+ol {
+    padding: 0 0 0 30pt;
+}
+
+ul {
+    list-style: circle;
+    font-size: 1rem;
+    margin: 0pt 0pt 0pt 0pt;
+}
+
+ol {
+    list-style: decimal;
+}
+
+a,
+.md-def-url {
+	color: #004070;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+table {
+	margin-bottom: 5px;
+    border: 1px solid #ddd
+}
+table th,
+table td {
+	padding: 5px;
+	/*line-height: 1.25rem;*/
+	vertical-align: center;
+    horizonal-align: center;
+	border: 1px solid #ddd
+}
+table th {
+	font-weight: normal;
+}
+table thead th {
+	vertical-align: center;
+    horizonal-align: center;
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0;
+}
+table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+code, .md-fences {
+	padding: .5em;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	padding: .1em;
+	font-size: 0.9em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+
+}
+.md-fences {
+	margin: 0 0 20px;
+	font-size: 1em;
+	padding: 0.3em 1em;
+  	padding-top: 0.4em;
+}
+
+@media print {
+    #write{
+        font-size: 8px;
+        max-width: 100%;
+    }
+    @page {
+        size: letter;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
